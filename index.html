@@ -1,0 +1,236 @@
+<html lang="en">
+
+<head>
+
+    <title>Gmail Inbox Dashboard page </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="css/tab.css" rel="stylesheet" id="bootstrap-css">
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-2">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Gmail <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a style='color:red;' href="#">Mail</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Tasks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-9 col-md-10">
+                <!-- Split button -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default">
+                        <div class="checkbox" style="margin: 0;">
+                            <label>
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                    </button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span><span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">None</a></li>
+                        <li><a href="#">Read</a></li>
+                        <li><a href="#">Unread</a></li>
+                        <li><a href="#">Starred</a></li>
+                        <li><a href="#">Unstarred</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-default" data-toggle="tooltip" title="Refresh">
+                    &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-refresh"></span>&nbsp;&nbsp;&nbsp;</button>
+                <!-- Single button -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        More <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Mark all as read</a></li>
+                        <li class="divider"></li>
+                        <li class="text-center">
+                            <small class="text-muted">Select messages to see more actions</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <span class="text-muted"><b>1</b>–<b>50</b> of <b>277</b></span>
+                    <div class="btn-group btn-group-sm">
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3 col-md-2">
+                <a href="#" class="btn btn-danger btn-sm btn-block" role="button">COMPOSE</a>
+                <hr />
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#"><span class="badge pull-right">5</span> Inbox </a>
+                    </li>
+                    <li><a style='color:black;' href=>Starred</a></li>
+                    <li><a style='color:black;' href=>Important</a></li>
+                    <li><a style='color:black;' href=>Sent Mail</a></li>
+                    <li><a style='color:black;' href=>
+                            <span class="badge pull-right">0</span>Drafts</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-md-10">
+                <!-- Nav -->
+                <ul class="nav nav-tabs">
+                    <!-- <button class="btn-1" onClick="p1()">Pra 1</button>
+                    <button class="btn-2" onClick="p2()">Pra 2</button>
+                    <button class="btn-3" onClick="p3()">Pra 3</button> -->
+                    <li class="active" id="p-1"><a href="#home" data-toggle="tab">
+                            <span class="glyphicon glyphicon-inbox">
+                            </span>Primary</a></li>
+                    <li id="p-2"><a style="color:black;" href="#profile" data-toggle="tab">
+                            <span class="glyphicon glyphicon-user">
+                            </span>Social</a></li>
+                    <li id="p-3"><a style="color:black;" href="#messages" data-toggle="tab">
+                            <span class="glyphicon glyphicon-tags">
+                            </span>Promotions</a></li>
+
+                </ul>
+                <!-- Tabs -->
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="home">
+                        <div class="list-group">
+
+                            <a href="#" class="list-group-item">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="name" style="min-width: 120px; display: inline-block;">PERSON 1</span>
+                                <span class="">You have uploaded 1 files</span>
+                                <span class="text-muted" style="font-size: 11px;">
+
+                                </span>
+                                <span class="badge">42:01 AM</span>
+                                <span class="pull-right">
+                                    <span class="glyphicon glyphicon-paperclip">
+                                    </span></span>
+                            </a>
+
+                            <a href="#" class="list-group-item">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="name" style="min-width: 120px; display: inline-block;">PERSON 2</span>
+                                <span class="">You have uploaded 2 files</span>
+                                <span class="text-muted" style="font-size: 11px;">
+
+                                </span>
+                                <span class="badge">12:69 AM</span>
+                                <span class="pull-right">
+                                    <span class="glyphicon glyphicon-paperclip">
+                                    </span></span>
+                            </a>
+
+                            <a href="#" class="list-group-item">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="name" style="min-width: 120px; display: inline-block;">PERSON 3</span>
+                                <span class="">You have uploaded 3 files</span>
+                                <span class="text-muted" style="font-size: 11px;">
+
+                                </span>
+                                <span class="badge">12:10 AM</span>
+                                <span class="pull-right">
+                                    <span class="glyphicon glyphicon-paperclip">
+                                    </span></span>
+                            </a>
+
+                            <a href="#" class="list-group-item">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="name" style="min-width: 120px; display: inline-block;">PERSON 4</span>
+                                <span class="">You have uploaded 4 files</span>
+                                <span class="text-muted" style="font-size: 11px;">
+
+                                </span>
+                                <span class="badge">22:16 AM</span>
+                                <span class="pull-right">
+                                    <span class="glyphicon glyphicon-paperclip">
+                                    </span></span>
+                            </a>
+
+                            <a href="#" class="list-group-item">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="name" style="min-width: 120px; display: inline-block;">PERSON 5</span>
+                                <span class="">You have uploaded 5 files</span>
+                                <span class="text-muted" style="font-size: 11px;">
+
+                                </span>
+                                <span class="badge">15:26 AM</span>
+                                <span class="pull-right">
+                                    <span class="glyphicon glyphicon-paperclip">
+                                    </span></span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile"><p>Khatam Tata Bye Bye</p></div>
+                    <div class="tab-pane fade" id="messages"><p>Lorem shit</p></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        function p1() {
+            document.getElementById('p-1').style.display = 'block ';
+            document.getElementById('p-2').style.display = 'none';
+            document.getElementById('p-3').style.display = 'none';
+        }
+        function p2() {
+            document.getElementById('p-2').style.display = 'block';
+            document.getElementById('p-1').style.display = 'none';
+            document.getElementById('p-3').style.display = 'none';
+        }
+        function p3() {
+            document.getElementById('p-3').style.display = 'block';
+            document.getElementById('p-1').style.display = 'none';
+            document.getElementById('p-2').style.display = 'none';
+        }
+
+    </script> -->
+</body>
+
+</html>
